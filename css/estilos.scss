@@ -1,0 +1,66 @@
+@import "variables.scss";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    //background-color: rgb(16, 197, 16);
+    background-color: map-get($color, verde);
+    //background-color: yellowgreen;
+    
+    display: flex;
+    justify-content: space-between;
+    * {
+        margin: 5px;
+        color: white;
+    }
+
+    .container-izquierda {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        .logo {
+            width: 70px;
+            height: 70px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 400;
+        }
+
+        nav {
+            margin: 0;
+
+            ul {
+                display: flex;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        text-decoration: none;
+
+                    }
+                }
+            }
+        }
+    }
+    .container-derecha {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        #buscador{
+            padding: 13px;
+            border: none;
+            border-radius: 5px;
+        }
+        button{
+            background-color: #444;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    }
+}

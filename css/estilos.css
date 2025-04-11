@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(9, 146, 9);
+  display: flex;
+  justify-content: space-between;
+}
+header * {
+  margin: 5px;
+  color: white;
+}
+header .container-izquierda {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+header .container-izquierda .logo {
+  width: 70px;
+  height: 70px;
+}
+header .container-izquierda h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+header .container-izquierda nav {
+  margin: 0;
+}
+header .container-izquierda nav ul {
+  display: flex;
+}
+header .container-izquierda nav ul li {
+  list-style: none;
+}
+header .container-izquierda nav ul li a {
+  text-decoration: none;
+}
+header .container-derecha {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+header .container-derecha #buscador {
+  padding: 13px;
+  border: none;
+  border-radius: 5px;
+}
+header .container-derecha button {
+  background-color: #444;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}/*# sourceMappingURL=estilos.css.map */
