@@ -12,7 +12,7 @@ $archivo = basename($origen[0]['file']);
                 <li>
                     <?php
                     if ($archivo === 'index.php') {
-                        echo '<strong>Inicio</strong>';
+                        echo '<strong>Inicio</strong>'; 
                     } else {
                         echo '<a href="index.php">Inicio</a>';
                     }
@@ -20,17 +20,31 @@ $archivo = basename($origen[0]['file']);
                 </li>
                 <li>
                     <?php
-                    if (isset($_SESSION['usuario'])) {
-                        if ($archivo === 'vista/vista_productos.php') {
-                            echo '<strong>Productos</strong>';
-                        } else {
-                            echo '<a href="vista/vista_productos.php">Productos</a>';
-                        }
+                    if ($archivo === 'vista/tienda.php') {
+                        echo '<strong>Tienda</strong>';
                     } else {
+                        echo '<a href="vista/tienda.php">Tienda</a>';
+                    }
+                    ?>
+                </li>
+                <li>
+                    <?php
+                    if (!isset($_SESSION['usuario'])) {
                         if ($archivo === 'vista/inciar_sesion.php') {
-                            echo '<strong>Iniciar Sesion</strong>';
+                            echo '<strong>Iniciar Sesión</strong>';
+                        }else {
+                            echo '<a href="vista/login.php">Iniciar Sesión</a>';
+                        }
+                    }
+                    ?>
+                </li>
+                <li>
+                    <?php
+                    if (!isset($_SESSION['usuario'])) {
+                        if ($archivo === 'vista/registrarse.php') {
+                            echo '<strong>Registrarse</strong>';
                         } else {
-                            echo '<a href="vista/iniciar_sesion.php">Iniciar Sesion</a>';
+                            echo '<a href="vista/registrarse.php">Registrarse</a>';
                         }
                     }
                     ?>

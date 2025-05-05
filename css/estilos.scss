@@ -64,3 +64,71 @@ header {
         }
     }
 }
+body{
+    .container{
+        width: 70%;
+        margin: 0 auto;
+
+        img{
+            width: 100%;
+            height: auto;  
+        }
+        .productos{
+            align-items: center;
+            display: grid;
+            text-align: center;
+            gap: 20px;
+            grid-template-areas: "1p 2p 3p"
+                                 "4p 5p 6p";    
+            .p1{
+                grid-area: 1p;
+            }
+            .p2{
+                grid-area: 2p;
+            }
+            .p3{
+                grid-area: 3p;
+            }
+            .p4{
+                grid-area: 4p;
+            }
+            .p5{
+                grid-area: 5p;
+            }
+            .p6{
+                grid-area: 6p;
+            } .producto {
+                display: flex;
+                width: 350px;
+                margin: 0 auto;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                border: #444 solid 1px;
+                border-radius: 15px;
+                padding: 10px;
+                img{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 5px;
+                    margin: 10px;
+                } 
+
+                button{
+                    background-color: map-get($color, verde);
+                    color: white;
+                    padding: 10px;
+                    border: 0;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+    footer{
+        background-color: map-get($color, verde);
+        color: white;
+        text-align: center;
+        padding: 25px;
+        margin-top: 20px;
+    }
+}

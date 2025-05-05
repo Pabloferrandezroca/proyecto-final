@@ -52,4 +52,69 @@ header .container-derecha button {
   border: none;
   padding: 10px;
   border-radius: 5px;
+}
+
+body .container {
+  width: 70%;
+  margin: 0 auto;
+}
+body .container img {
+  width: 100%;
+  height: auto;
+}
+body .container .productos {
+  align-items: center;
+  display: grid;
+  text-align: center;
+  gap: 20px;
+  grid-template-areas: "1p 2p 3p" "4p 5p 6p";
+}
+body .container .productos .p1 {
+  grid-area: 1p;
+}
+body .container .productos .p2 {
+  grid-area: 2p;
+}
+body .container .productos .p3 {
+  grid-area: 3p;
+}
+body .container .productos .p4 {
+  grid-area: 4p;
+}
+body .container .productos .p5 {
+  grid-area: 5p;
+}
+body .container .productos .p6 {
+  grid-area: 6p;
+}
+body .container .productos .producto {
+  display: flex;
+  width: 350px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: #444 solid 1px;
+  border-radius: 15px;
+  padding: 10px;
+}
+body .container .productos .producto img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  margin: 10px;
+}
+body .container .productos .producto button {
+  background-color: rgb(9, 146, 9);
+  color: white;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+}
+body footer {
+  background-color: rgb(9, 146, 9);
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 20px;
 }/*# sourceMappingURL=estilos.css.map */
