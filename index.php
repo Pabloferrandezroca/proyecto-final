@@ -11,6 +11,7 @@ session_start();
 	<link rel="stylesheet" href="css/fontawesome/css/all.min.css">
 </head>
 <?php
+require_once 'vista/header.php';
 require_once 'vista/body.php';
 ?>
 </html>

@@ -30,10 +30,10 @@ $archivo = basename($origen[0]['file']);
                 <li>
                     <?php
                     if (!isset($_SESSION['usuario'])) {
-                        if ($archivo === 'vista/inciar_sesion.php') {
+                        if ($archivo === 'login.php') {
                             echo '<strong>Iniciar Sesión</strong>';
                         }else {
-                            echo '<a href="vista/login.php">Iniciar Sesión</a>';
+                            echo '<a href="login.php">Iniciar Sesión</a>';
                         }
                     }
                     ?>

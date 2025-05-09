@@ -1,6 +1,6 @@
 <?php
 
-require_once 'header.php';
+
 require_once(__DIR__ . '/../controlador/ProductosController.php');
 
 ?>

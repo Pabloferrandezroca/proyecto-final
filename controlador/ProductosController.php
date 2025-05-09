@@ -11,4 +11,9 @@ class ProductosController {
         $productos = $this->db->obtenerProductos();
         return $productos;
     }
+
+    public function iniciarSesion($usuario, $contraseña) {
+        $resultado = $this->db->inicioSesion($usuario, $contraseña);
+        return $resultado;
+    }
 }

@@ -20,4 +20,15 @@ class Db{
         }  
         return $productos;
     }
+
+    public function inicioSesion($usuario, $contraseña) {
+        $this->conexion->set_charset("utf8");
+        $query = "SELECT * FROM customers WHERE name = '$usuario' AND password = '$contraseña'";
+        $result = mysqli_query($this->conexion, $query);
+        if (mysqli_num_rows($result) > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
