@@ -44,7 +44,7 @@ $archivo = basename($origen[0]['file']);
                         if ($archivo === 'vista/registrarse.php') {
                             echo '<strong>Registrarse</strong>';
                         } else {
-                            echo '<a href="vista/registrarse.php">Registrarse</a>';
+                            echo '<a href="registro.php">Registrarse</a>';
                         }
                     }
                     ?>
@@ -78,7 +78,7 @@ $archivo = basename($origen[0]['file']);
                 </li>
                 <?php
                 if (isset($_SESSION['usuario'])) {
-                    echo '<li><a href="vista/cerrar_sesion.php">Cerran Sesion</a></li>';
+                    echo '<li><a href="cerrar_sesion.php">Cerran Sesion</a></li>';
                 }
                 ?>
             </ul>

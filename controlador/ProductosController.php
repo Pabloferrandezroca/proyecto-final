@@ -12,8 +12,4 @@ class ProductosController {
         return $productos;
     }
 
-    public function iniciarSesion($usuario, $contraseña) {
-        $resultado = $this->db->inicioSesion($usuario, $contraseña);
-        return $resultado;
-    }
 }

@@ -4,12 +4,16 @@ if ($_POST) {
 	$usuario = trim(htmlentities($_POST['usuario']));
 	$contraseña = trim(htmlentities($_POST['contraseña']));
 	
-	require_once 'controlador/ProductosController.php';
-	$p = new ProductosController();
+	require_once 'controlador/clientesController.php';
+	$p = new clientesController();
 	$resultado = $p->iniciarSesion($usuario, $contraseña);
 	if ($resultado) {
 		$_SESSION['usuario'] = $usuario;
-		header('Location: vista/body.php');
+		header('Location: index.php');
+	}
+	else {
+		echo $usuario;
+		echo $contraseña;
 	}
 }
 ?>
