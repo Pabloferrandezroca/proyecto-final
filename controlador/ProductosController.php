@@ -12,4 +12,12 @@ class ProductosController {
         return $productos;
     }
 
+    public function obtenerCarrito($id){
+        $carrito = $this->db->obtenerPorId($id);
+        if ($carrito) {
+            return $carrito;
+        } else {
+            return [];
+        }
+    } 
 }

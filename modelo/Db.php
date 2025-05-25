@@ -64,4 +64,14 @@ class Db{
             return false;
         }
     }
+    public function obtenerPorId($id) {
+        $this->conexion->set_charset("utf8");
+        $query = "SELECT * FROM products WHERE id = '$id'";
+        $result = mysqli_query($this->conexion, $query);
+        if (mysqli_num_rows($result) > 0) {
+            return mysqli_fetch_assoc($result);
+        } else {
+            return null;
+        }
+    }
 }

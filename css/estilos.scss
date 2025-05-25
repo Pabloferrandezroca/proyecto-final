@@ -113,7 +113,14 @@ body{
                     border-radius: 5px;
                     margin: 10px;
                 } 
-
+                .eliminar{
+                    background-color: map-get($color, rojo);
+                    color: white;
+                    padding: 10px;
+                    border: 0;
+                    border-radius: 5px;
+                    margin-top: 10px;
+                }
                 button{
                     background-color: map-get($color, verde);
                     color: white;

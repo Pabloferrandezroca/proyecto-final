@@ -4,7 +4,7 @@
 }
 
 header {
-  background-color: rgb(6, 119, 6);
+  background-color: #067706;
   display: flex;
   justify-content: space-between;
 }
@@ -104,15 +104,23 @@ body .container .productos .producto img {
   border-radius: 5px;
   margin: 10px;
 }
+body .container .productos .producto .eliminar {
+  background-color: #d30000;
+  color: white;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  margin-top: 10px;
+}
 body .container .productos .producto button {
-  background-color: rgb(6, 119, 6);
+  background-color: #067706;
   color: white;
   padding: 10px;
   border: 0;
   border-radius: 5px;
 }
 body footer {
-  background-color: rgb(6, 119, 6);
+  background-color: #067706;
   color: white;
   text-align: center;
   padding: 25px;
@@ -137,7 +145,7 @@ body footer {
   width: 70%;
 }
 #login button {
-  background-color: rgb(6, 119, 6);
+  background-color: #067706;
   color: white;
   padding: 10px;
   border: 0;

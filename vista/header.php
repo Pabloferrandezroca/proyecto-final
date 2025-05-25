@@ -85,7 +85,7 @@ $archivo = basename($origen[0]['file']);
         </nav>
     </div>
     <div class="container-derecha">
-        <i class="fa-solid fa-cart-shopping"></i>
+        <a href="carrito.php"><i class="fa-solid fa-cart-shopping"></i></a>
         <form action="#" method="get">
             <input type="text" name="buscador" id="buscador" placeholder="Buscar">
             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
