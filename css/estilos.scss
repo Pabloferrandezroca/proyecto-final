@@ -65,6 +65,9 @@ header {
     }
 }
 body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; // Asegura que el body ocupe al menos toda la altura del viewport
     .container{
         width: 70%;
         margin: 0 auto;
@@ -136,7 +139,7 @@ body{
         color: white;
         text-align: center;
         padding: 25px;
-        margin-top: 20px;
+        margin-top: auto;
     }
 }
 #login{

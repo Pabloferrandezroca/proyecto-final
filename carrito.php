@@ -55,5 +55,8 @@ $p = new ProductosController();
         ?>
         </div>
     </div>
+    <?php
+    require_once('vista/footer.php');
+    ?>
 </body>
 </html>

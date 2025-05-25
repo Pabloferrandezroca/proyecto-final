@@ -54,6 +54,11 @@ header .container-derecha button {
   border-radius: 5px;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 body .container {
   width: 70%;
   margin: 0 auto;
@@ -124,7 +129,7 @@ body footer {
   color: white;
   text-align: center;
   padding: 25px;
-  margin-top: 20px;
+  margin-top: auto;
 }
 
 #login {

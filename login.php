@@ -36,4 +36,7 @@ require_once 'vista/header.php';
 	<p>¿No tienes cuenta? <a href="registro.php">Registrate</a></p>
 	<button type="submit">Iniciar Sesión</button>
 </form>
+<?php
+require_once 'vista/footer.php';
+?>
 </html>
