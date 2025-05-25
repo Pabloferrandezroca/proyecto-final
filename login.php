@@ -32,7 +32,7 @@ require_once 'vista/header.php';
 <form action="" method="POST" id="login">
 	<h1>Iniciar Sesión</h1>
 	<input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario">
-	<input type="text" name="contraseña" id="contraseña" placeholder="Contraseña">
+	<input type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
 	<p>¿No tienes cuenta? <a href="registro.php">Registrate</a></p>
 	<button type="submit">Iniciar Sesión</button>
 </form>
