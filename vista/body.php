@@ -17,7 +17,11 @@ require_once(__DIR__ . '/../controlador/ProductosController.php');
             
             $p = new ProductosController();
             $productos = $p->mostrarProductos();
+            $contador = 0;
             foreach ($productos as $producto) {
+                if ($contador >= 6){
+                    break;
+                }
                 echo '<div class="producto ' . $producto['id'] . 'p">';
                     echo '<img src="' . $producto['image_url'] . '" alt="Imagen del producto"/>';
                     echo '<h3>' . $producto['name'] . '</h3>';
@@ -27,6 +31,7 @@ require_once(__DIR__ . '/../controlador/ProductosController.php');
                         echo '<button type="submit">Añadir al carrito</button>';
                     echo '</form>';
                 echo '</div>';
+                $contador++;
             }
             ?>
             </div>
