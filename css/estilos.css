@@ -62,6 +62,7 @@ body {
 body .container {
   width: 70%;
   margin: 0 auto;
+  text-align: center;
 }
 body .container img {
   width: 100%;
@@ -155,4 +156,27 @@ body footer {
   padding: 10px;
   border: 0;
   border-radius: 5px;
+}
+
+.consejos {
+  display: grid;
+  grid-template-areas: "1c 2c 3c" "4c 5c 6c";
+}
+.consejos .c1 {
+  grid-area: 1c;
+}
+.consejos .c2 {
+  grid-area: 2c;
+}
+.consejos .c3 {
+  grid-area: 3c;
+}
+.consejos .c4 {
+  grid-area: 4c;
+}
+.consejos .c5 {
+  grid-area: 5c;
+}
+.consejos .c6 {
+  grid-area: 6c;
 }/*# sourceMappingURL=estilos.css.map */

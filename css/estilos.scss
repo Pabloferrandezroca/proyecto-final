@@ -71,7 +71,7 @@ body{
     .container{
         width: 70%;
         margin: 0 auto;
-
+        text-align: center;
         img{
             width: 100%;
             height: auto;  
@@ -164,5 +164,28 @@ body{
         padding: 10px;
         border: 0;
         border-radius: 5px;
+    }
+}
+.consejos{
+    display: grid;
+    grid-template-areas: "1c 2c 3c"
+                         "4c 5c 6c";
+    .c1{
+        grid-area: 1c;
+    }
+    .c2{
+        grid-area: 2c;
+    }
+    .c3{
+        grid-area: 3c;
+    }
+    .c4{
+        grid-area: 4c;
+    }
+    .c5{
+        grid-area: 5c;
+    }
+    .c6{
+        grid-area: 6c;
     }
 }

@@ -20,10 +20,10 @@ $archivo = basename($origen[0]['file']);
                 </li>
                 <li>
                     <?php
-                    if ($archivo === 'vista/tienda.php') {
+                    if ($archivo === 'tienda.php') {
                         echo '<strong>Tienda</strong>';
                     } else {
-                        echo '<a href="vista/tienda.php">Tienda</a>';
+                        echo '<a href="tienda.php">Tienda</a>';
                     }
                     ?>
                 </li>
@@ -60,19 +60,10 @@ $archivo = basename($origen[0]['file']);
                 </li>
                 <li>
                     <?php
-                    if ($archivo === 'vista/sobre_nosotros.php') {
-                        echo '<strong>Sobre nosotros</strong>';
-                    } else {
-                        echo '<a href="vista/sobre_nosotros.php">Sobre nosotros</a>';
-                    }
-                    ?>
-                </li>
-                <li>
-                    <?php
-                    if ($archivo === 'vista/contacto.php') {
+                    if ($archivo === 'contacto.php') {
                         echo '<strong>Contacto</strong>';
                     } else {
-                        echo '<a href="vista/contacto.php">Contacto</a>';
+                        echo '<a href="contacto.php">Contacto</a>';
                     }
                     ?>
                 </li>
