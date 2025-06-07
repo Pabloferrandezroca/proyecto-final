@@ -5,7 +5,7 @@ $archivo = basename($origen[0]['file']);
 ?>
 <header>
     <div class="container-izquierda">
-        <img src="../../img/descarga.jpeg" alt="logo" class="logo">
+        <img src="../../img/logo.png" alt="logo" class="logo">
         <h1>JardinBrillante</h1>
         <nav>
             <ul>
@@ -41,7 +41,7 @@ $archivo = basename($origen[0]['file']);
                 <li>
                     <?php
                     if (!isset($_SESSION['usuario'])) {
-                        if ($archivo === 'vista/registrarse.php') {
+                        if ($archivo === 'registro.php') {
                             echo '<strong>Registrarse</strong>';
                         } else {
                             echo '<a href="registro.php">Registrarse</a>';
@@ -51,10 +51,10 @@ $archivo = basename($origen[0]['file']);
                 </li>
                 <li>
                     <?php
-                    if ($archivo === 'vista/consejos.php') {
+                    if ($archivo === 'consejos.php') {
                         echo '<strong>Consejos de Jardineria</strong>';
                     } else {
-                        echo '<a href="vista/consejos.php">Consejos de Jardineria</a>';
+                        echo '<a href="consejos.php">Consejos de Jardineria</a>';
                     }
                     ?>
                 </li>

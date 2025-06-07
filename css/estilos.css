@@ -132,6 +132,10 @@ body footer {
   padding: 25px;
   margin-top: auto;
 }
+body footer img {
+  width: 50px;
+  height: 50px;
+}
 
 #login {
   display: flex;
@@ -160,23 +164,97 @@ body footer {
 
 .consejos {
   display: grid;
+  gap: 20px;
   grid-template-areas: "1c 2c 3c" "4c 5c 6c";
 }
 .consejos .c1 {
   grid-area: 1c;
+  display: flex;
+  width: 350px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: #444 solid 1px;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #a6f3ac;
 }
 .consejos .c2 {
   grid-area: 2c;
+  display: flex;
+  width: 350px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: #444 solid 1px;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #a6f3ac;
 }
 .consejos .c3 {
   grid-area: 3c;
+  display: flex;
+  width: 350px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: #444 solid 1px;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #a6f3ac;
 }
 .consejos .c4 {
   grid-area: 4c;
+  display: flex;
+  width: 350px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: #444 solid 1px;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #a6f3ac;
 }
 .consejos .c5 {
   grid-area: 5c;
+  display: flex;
+  width: 350px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: #444 solid 1px;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #a6f3ac;
 }
 .consejos .c6 {
   grid-area: 6c;
+  display: flex;
+  width: 350px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: #444 solid 1px;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #a6f3ac;
+}
+
+.pagar {
+  background-color: #067706;
+  color: white;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  margin: 15px;
+}
+.pagar a {
+  color: white;
+  text-decoration: none;
 }/*# sourceMappingURL=estilos.css.map */

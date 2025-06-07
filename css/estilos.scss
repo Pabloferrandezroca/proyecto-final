@@ -140,6 +140,11 @@ body{
         text-align: center;
         padding: 25px;
         margin-top: auto;
+
+        img{
+            width: 50px;
+            height: 50px;
+        }
     }
 }
 #login{
@@ -168,24 +173,98 @@ body{
 }
 .consejos{
     display: grid;
+    gap: 20px;
     grid-template-areas: "1c 2c 3c"
                          "4c 5c 6c";
     .c1{
         grid-area: 1c;
+        display: flex;
+        width: 350px;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border: #444 solid 1px;
+        border-radius: 15px;
+        padding: 10px;
+        background-color: #a6f3ac;
     }
     .c2{
         grid-area: 2c;
+        display: flex;
+        width: 350px;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border: #444 solid 1px;
+        border-radius: 15px;
+        padding: 10px;
+        background-color: #a6f3ac;
     }
     .c3{
         grid-area: 3c;
+        display: flex;
+        width: 350px;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border: #444 solid 1px;
+        border-radius: 15px;
+        padding: 10px;
+        background-color: #a6f3ac;
     }
     .c4{
         grid-area: 4c;
+        display: flex;
+        width: 350px;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border: #444 solid 1px;
+        border-radius: 15px;
+        padding: 10px;
+        background-color: #a6f3ac;
     }
     .c5{
         grid-area: 5c;
+        display: flex;
+        width: 350px;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border: #444 solid 1px;
+        border-radius: 15px;
+        padding: 10px;
+        background-color: #a6f3ac;
     }
     .c6{
         grid-area: 6c;
+        display: flex;
+        width: 350px;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border: #444 solid 1px;
+        border-radius: 15px;
+        padding: 10px;
+        background-color: #a6f3ac;
+    }
+}
+.pagar{
+    background-color: map-get($color, verde);
+    color: white;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    margin: 15px;
+
+    a{
+        color: white;
+        text-decoration: none;
     }
 }
