@@ -38,7 +38,7 @@ class Db{
         $result = mysqli_query($this->conexion, $query);
         if (mysqli_num_rows($result) === 0) {
             $this->registro($usuario, $email, $contraseña);
-            
+            return true;
         }
         else{
             $query = "SELECT * FROM customers WHERE name = '$usuario'";

@@ -22,7 +22,12 @@ if ($_POST) {
 	if ($contraseña !== $contraseña2) {
 		$errores[] = "Las contraseñas no coinciden.";
 	}
-
+	$c = new clientesController();
+	$comprobar = $c->comprobarRegistro($usuario, $email, $contraseña);
+	if (!is_bool($comprobar)) {
+		
+		$errores[] = $comprobar;
+	}
 	if (empty($errores)) {
 		$c = new clientesController();
 		$c->comprobarRegistro($usuario, $email, $contraseña);
@@ -39,7 +44,8 @@ if ($_POST) {
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Registro</title>
+	<link rel="icon" href="img/logo.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" href="css/fontawesome/css/all.min.css">
 </head>
@@ -51,8 +57,17 @@ require_once 'vista/header.php';
 	<input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario">
     <input type="email" name="email" id="email" placeholder="Correo electrónico">
 	<input type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
-    <input type="password" name="contraseña2" id="contraseña2" placeholder="Contraseña2">
+    <input type="password" name="contraseña2" id="contraseña2" placeholder="Repite la contraseña">
 	<p>¿Ya tienes cuenta? <a href="registro.php">Inicia sesión</a></p>
+	<?php
+	if ($_POST){
+		if ($errores) {
+			foreach ($errores as $error) {
+				echo "<p class='error'>$error</p>";
+			}
+		}
+	}
+	?>
 	<button type="submit">Registrarse</button>
 </form>
 <?php

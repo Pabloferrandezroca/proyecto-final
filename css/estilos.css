@@ -8,6 +8,12 @@ header {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 1200px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 header * {
   margin: 5px;
   color: white;
@@ -17,19 +23,42 @@ header .container-izquierda {
   align-items: center;
   margin: 0;
 }
+@media (max-width: 1200px) {
+  header .container-izquierda {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 header .container-izquierda .logo {
   width: 70px;
   height: 70px;
 }
+@media (max-width: 800px) {
+  header .container-izquierda .logo {
+    width: 30px;
+    height: 30px;
+  }
+}
 header .container-izquierda h1 {
   font-size: 2rem;
   font-weight: 400;
+}
+@media (max-width: 800px) {
+  header .container-izquierda h1 {
+    font-size: 1.5rem;
+  }
 }
 header .container-izquierda nav {
   margin: 0;
 }
 header .container-izquierda nav ul {
   display: flex;
+}
+@media (max-width: 800px) {
+  header .container-izquierda nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 header .container-izquierda nav ul li {
   list-style: none;
@@ -60,13 +89,11 @@ body {
   min-height: 100vh;
 }
 body .container {
-  width: 70%;
   margin: 0 auto;
   text-align: center;
 }
 body .container img {
   width: 100%;
-  height: auto;
 }
 body .container .productos {
   align-items: center;
@@ -74,6 +101,16 @@ body .container .productos {
   text-align: center;
   gap: 20px;
   grid-template-areas: "1p 2p 3p" "4p 5p 6p";
+}
+@media (max-width: 1200px) {
+  body .container .productos {
+    grid-template-areas: "1p 2p" "3p 4p" "5p 6p";
+  }
+}
+@media (max-width: 800px) {
+  body .container .productos {
+    grid-template-areas: "1p" "2p" "3p" "4p" "5p" "6p";
+  }
 }
 body .container .productos .p1 {
   grid-area: 1p;
@@ -166,6 +203,16 @@ body footer img {
   display: grid;
   gap: 20px;
   grid-template-areas: "1c 2c 3c" "4c 5c 6c";
+}
+@media (max-width: 1200px) {
+  .consejos {
+    grid-template-areas: "1p 2p" "3p 4p" "5p 6p";
+  }
+}
+@media (max-width: 800px) {
+  .consejos {
+    grid-template-areas: "1p" "2p" "3p" "4p" "5p" "6p";
+  }
 }
 .consejos .c1 {
   grid-area: 1c;

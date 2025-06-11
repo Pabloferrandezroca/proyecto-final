@@ -13,6 +13,7 @@ class clientesController{
     }
 
     public function comprobarRegistro($usuario, $email, $contraseña){
-        $this->db->comprobarRegistro($usuario, $email, $contraseña);
+        $resultado = $this->db->comprobarRegistro($usuario, $email, $contraseña);
+        return $resultado;
     }
 }

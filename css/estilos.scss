@@ -1,16 +1,21 @@
 @import "variables.scss";
+@import "_mixins.scss";
 * {
     margin: 0;
     padding: 0;
 }
 
 header {
-    //background-color: rgb(16, 197, 16);
     background-color: map-get($color, verde);
-    //background-color: yellowgreen;
     
     display: flex;
     justify-content: space-between;
+
+    @include respond-to(tablet) {
+        flex-direction: column;
+        align-items: center;
+    }
+
     * {
         margin: 5px;
         color: white;
@@ -20,14 +25,25 @@ header {
         display: flex;
         align-items: center;
         margin: 0;
+        @include respond-to(tablet) {
+        flex-direction: column;
+        align-items: center;
+    }
         .logo {
             width: 70px;
             height: 70px;
+            @include respond-to(phone) {
+                width: 30px;
+                height: 30px;
+            }
         }
 
         h1 {
             font-size: 2rem;
             font-weight: 400;
+            @include respond-to(phone) {
+                font-size: 1.5rem;
+            }
         }
 
         nav {
@@ -35,7 +51,10 @@ header {
 
             ul {
                 display: flex;
-
+                @include respond-to(phone) {
+                    flex-direction: column;
+                    align-items: center;
+                }
                 li {
                     list-style: none;
 
@@ -69,12 +88,10 @@ body{
     flex-direction: column;
     min-height: 100vh; // Asegura que el body ocupe al menos toda la altura del viewport
     .container{
-        width: 70%;
         margin: 0 auto;
         text-align: center;
         img{
-            width: 100%;
-            height: auto;  
+            width: 100%; 
         }
         .productos{
             align-items: center;
@@ -82,7 +99,20 @@ body{
             text-align: center;
             gap: 20px;
             grid-template-areas: "1p 2p 3p"
-                                 "4p 5p 6p";    
+                                 "4p 5p 6p";
+            @include respond-to(tablet) {
+                grid-template-areas: "1p 2p"
+                                     "3p 4p"
+                                     "5p 6p";
+            }
+            @include respond-to(phone) {
+                grid-template-areas: "1p"
+                                     "2p"
+                                     "3p"
+                                     "4p"
+                                     "5p"
+                                     "6p";
+            }
             .p1{
                 grid-area: 1p;
             }
@@ -176,6 +206,19 @@ body{
     gap: 20px;
     grid-template-areas: "1c 2c 3c"
                          "4c 5c 6c";
+    @include respond-to(tablet) {
+        grid-template-areas: "1p 2p"
+                             "3p 4p"
+                             "5p 6p";
+    }
+    @include respond-to(phone) {
+        grid-template-areas: "1p"
+                             "2p"
+                             "3p"
+                             "4p"
+                             "5p"
+                             "6p";
+    }
     .c1{
         grid-area: 1c;
         display: flex;
